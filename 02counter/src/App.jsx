@@ -5,20 +5,20 @@ import './App.css'
 
 function App() {
 
-  const [counter, sahilCounter]  = useState(15)
+  const [counter, setCounter]  = useState(15)
 
   //let counter = 15
 
   const addValue = () => {
     //counter = counter + 1
     if(counter<20){
-      sahilCounter(counter + 1)
+      setCounter(counter + 1)
     } 
    }
 
   const removeValue = () => {
     if(counter>0){
-      sahilCounter(counter - 1)
+      setCounter(counter - 1)
     }
     
   }
